@@ -1,5 +1,6 @@
 package com.example.administrator.myapplication;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
                 input.setTextColor(tColor2);
                 output.setBackground(input_color);
                 output.setTextColor(tColor1);
+            }
+        });
+
+        Button changeActivity = (Button)findViewById(R.id.changeActivity);
+        changeActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
             }
         });
     }

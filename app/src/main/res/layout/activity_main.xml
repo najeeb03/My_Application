@@ -14,7 +14,7 @@
         android:gravity="center"/>
 
     <TextView android:text="" android:textSize="30sp" android:layout_width="match_parent"
-        android:layout_height="50dp"  android:background="@color/blue"
+        android:layout_height="50dp"  android:background="@color/red"
         android:textColor="@color/black"
         android:id="@+id/output" android:layout_margin="5dp"
         android:gravity="center"/>
@@ -24,6 +24,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/reverse"/>
+
+    <Button android:text="change activity"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/changeActivity"
+        />
 
 
 </LinearLayout>
