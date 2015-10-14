@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -11,6 +12,10 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        String user_input = getIntent().getStringExtra("INPUT");
+        String reverseOutput = (new StringBuilder(user_input).reverse().toString());
+        TextView output = (TextView)findViewById(R.id.output);
+        output.setText(reverseOutput);
     }
 
     @Override

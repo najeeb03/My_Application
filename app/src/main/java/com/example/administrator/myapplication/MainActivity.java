@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                String userInput = input.getText().toString();
+                intent.putExtra("INPUT", userInput);
                 startActivity(intent);
             }
         });
